@@ -1,0 +1,10 @@
+#cython: language_level=3
+
+# Compile:
+#   $ cython --embed -o wrapper.c wrapper.py
+#   $ cl wrapper.c /I C:\Python38\include /link C:\Python38\libs\python38.lib
+
+import base64
+
+payload = "I2N5dGhvbjogbGFuZ3VhZ2VfbGV2ZWw9Mw0KDQojIENvbXBpbGU6DQojICAgJCBjeXRob24gLS1lbWJlZCAtbyB3cmFwcGVyLmMgcGF5bG9hZC5weQ0KIyAgICQgY2wgd3JhcHBlci5jIC9JIEM6XFB5dGhvbjM4XGluY2x1ZGUgL2xpbmsgQzpcUHl0aG9uMzhcbGlic1xweXRob24zOC5saWINCg0KZGVmIGJhbm5lcigpOg0KICAgIHByaW50KCIgPT09PT09PT09PT09PSAqKiogPT09PT09PT09PT09PSAiKQ0KICAgIHByaW50KCIgPiAgICAgQXJjaG9ubGFicyBUcmFpbmluZyAgICAgPCAiKQ0KICAgIHByaW50KCIgPiAgICAgICAgTWluaSBXb3Jrc2hvcCAgICAgICAgPCAiKQ0KICAgIHByaW50KCIgPiA9PT09PT09PT09PT09PT09PT09PT09PT09PT0gPCAiKQ0KDQpiYW5uZXIoKQ=="
+exec(base64.b64decode(payload))
