@@ -1,0 +1,6 @@
+[submodule "2024/pycon-2024-malpython"]
+	path = 2024/pycon-2024-malpython
+	url = https://github.com/xathrya/pycon-2024-malpython
+[submodule "2024/MalPython - Malicious Python/pycon-2024-malpython"]
+	path = 2024/MalPython - Malicious Python/pycon-2024-malpython
+	url = https://github.com/xathrya/pycon-2024-malpython
